@@ -1,0 +1,120 @@
+/* ===== Background & Body ===== */
+body {
+  /* background image with a dark overlay for better text contrast */
+  background: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url("images/background.jpg") no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ===== Header & Nav ===== */
+header {
+  position: relative;
+  text-align: center;
+  color: white;
+  background: rgba(37, 99, 235, 0.85);
+  padding: 2rem 1rem 1.5rem;
+  border-bottom: 4px solid #1d4ed8;
+}
+
+/* Profile photo in the top-left of the header */
+.profile-photo {
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+  width: 72px;
+  height: 72px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid rgba(255,255,255,0.85);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+/* Smaller on narrow screens */
+@media (max-width: 480px) {
+  .profile-photo {
+    left: 0.8rem;
+    top: 0.8rem;
+    width: 56px;
+    height: 56px;
+  }
+  header h1 { font-size: 1.4rem; }
+  header h2 { font-size: 1rem; }
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+header h2 {
+  margin-top: 0.3rem;
+  font-weight: 400;
+  opacity: 0.9;
+}
+
+nav {
+  margin-top: 1rem;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: 500;
+  border-bottom: 2px solid transparent;
+}
+nav a:hover,
+nav a.active {
+  border-color: white;
+}
+
+/* ===== Main Content ===== */
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+/* ===== Skills Badges ===== */
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.skills-list span {
+  background: #e5e7eb;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+/* ===== Buttons ===== */
+.btn {
+  display: inline-block;
+  padding: 0.6rem 1rem;
+  background: #2563eb;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+.btn:hover {
+  background: #1d4ed8;
+}
+
+/* ===== Footer ===== */
+footer {
+  text-align: center;
+  padding: 1rem;
+  color: #555;
+  font-size: 0.9rem;
+}
+
